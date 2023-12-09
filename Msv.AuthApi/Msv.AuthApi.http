@@ -1,0 +1,6 @@
+@Msv.AuthApi_HostAddress = http://localhost:5161
+
+GET {{Msv.AuthApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
