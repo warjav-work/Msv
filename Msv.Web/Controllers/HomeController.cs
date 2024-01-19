@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Msv.Web.Models;
+using Msv.Web.Utility;
 using System.Diagnostics;
 
 namespace Msv.Web.Controllers
@@ -18,6 +20,7 @@ namespace Msv.Web.Controllers
             return View();
         }
 
+        [Authorize(Roles = SD.RoleAdmin)]
         public IActionResult Privacy()
         {
             return View();

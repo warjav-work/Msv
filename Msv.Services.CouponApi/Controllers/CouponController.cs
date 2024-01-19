@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Msv.Services.CouponApi.Data;
 using Msv.Services.CouponApi.Models;
@@ -8,6 +9,7 @@ namespace Msv.Services.CouponApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CouponController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -78,6 +80,7 @@ namespace Msv.Services.CouponApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Post([FromBody] CouponDto couponDto)
         {
             try
@@ -98,6 +101,7 @@ namespace Msv.Services.CouponApi.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Put([FromBody] CouponDto couponDto)
         {
             try
@@ -119,6 +123,7 @@ namespace Msv.Services.CouponApi.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Delete(int id)
         {
             try
