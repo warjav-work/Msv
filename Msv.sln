@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Msv.Services.CouponApi", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Msv.Web", "Msv.Web\Msv.Web.csproj", "{C2263099-1367-48E9-A8BF-8060B7AF57ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msv.Services.AuthApi", "Msv.AuthApi\Msv.Services.AuthApi.csproj", "{333AB4E0-1D8D-4632-95A0-F1AB5022CDD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Msv.Services.AuthApi", "Msv.AuthApi\Msv.Services.AuthApi.csproj", "{333AB4E0-1D8D-4632-95A0-F1AB5022CDD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msv.Services.ProductApi", "Msv.Services.ProductApi\Msv.Services.ProductApi.csproj", "{3B0B2A67-2555-4B79-B27C-B65C0BBA1501}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{333AB4E0-1D8D-4632-95A0-F1AB5022CDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333AB4E0-1D8D-4632-95A0-F1AB5022CDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333AB4E0-1D8D-4632-95A0-F1AB5022CDD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0B2A67-2555-4B79-B27C-B65C0BBA1501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0B2A67-2555-4B79-B27C-B65C0BBA1501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0B2A67-2555-4B79-B27C-B65C0BBA1501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0B2A67-2555-4B79-B27C-B65C0BBA1501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{97F18025-6F2E-49CF-8004-95E372705F48} = {920CCE3D-4793-4DA5-A300-56E8454A20DA}
 		{C2263099-1367-48E9-A8BF-8060B7AF57ED} = {CC89DE6F-68AE-4486-93DF-D8250DD6E287}
 		{333AB4E0-1D8D-4632-95A0-F1AB5022CDD9} = {920CCE3D-4793-4DA5-A300-56E8454A20DA}
+		{3B0B2A67-2555-4B79-B27C-B65C0BBA1501} = {920CCE3D-4793-4DA5-A300-56E8454A20DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {514ABD70-D6EB-4AAB-8A1E-673123FEB3A7}
